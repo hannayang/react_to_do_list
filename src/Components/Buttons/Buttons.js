@@ -5,16 +5,8 @@ const buttons = (props) => {
 
   return (
     <div className = 'btn'>
-      <button 
-        style = {props.buttonStyle} 
-        className='fabButton'>
-        <a href = {props.twitterFullUrl} target='_blank'><i className="fab fa-twitter"></i></a>
-      </button>
-      <button 
-        style = {props.buttonStyle} 
-        className='fabButton'>
-        <a href = {props.tublrFullUrl} target='_blank'><i className="fab fa-tumblr"></i></a>  
-      </button>
+      <a className='fabBtn twitterBtn' style = {props.buttonStyle} href = {props.twitterFullUrl} target='_blank'><i className="fab fa-twitter"></i></a>
+      <a className='fabBtn tumblrBtn' style = {props.buttonStyle} href = {props.tublrFullUrl} target='_blank'><i className="fab fa-tumblr"></i></a>  
       <button 
         className = 'newQuote'
         onClick = {props.clicked}
