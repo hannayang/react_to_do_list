@@ -20,11 +20,16 @@ const nextIndex = () => {
   return Math.floor(Math.random() * quoteLibrary.length);
 };
 
-const constructShareUrl = [
-  {preface: 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="', connection: '"', ending: '' }, 
-  {preface: 'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=', connection: '&content=', ending: '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button'}
-]; 
+const constructTwitterUrl = {
+  preface: 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="', 
+  connection: '"', 
+  ending: '' }; 
 
+const constructTumblrUrl = {
+  preface: 'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=', 
+  connection: '&content=', 
+  ending: '&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button'
+};
 
 class App extends Component {
   state = {
@@ -49,11 +54,11 @@ class App extends Component {
     }; 
 
     const twitterFullUrl = () => {
-      return constructShareUrl[0].preface + quoteDisplay.text + constructShareUrl[0].connection + quoteDisplay.author
+      return constructTwitterUrl.preface + quoteDisplay.text + constructTwitterUrl.connection + quoteDisplay.author
     }; 
 
     const tublrFullUrl = () => {
-      return constructShareUrl[1].preface + quoteDisplay.author + constructShareUrl[1].connection + quoteDisplay.text + constructShareUrl[1].ending
+      return constructTumblrUrl.preface + quoteDisplay.author + constructTumblrUrl.connection + quoteDisplay.text + constructTumblrUrl.ending
     }; 
 
     return (
