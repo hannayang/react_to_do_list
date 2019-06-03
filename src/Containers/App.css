@@ -1,6 +1,54 @@
 .App {
   height: 100%; 
-  text-align: center;
-  padding-top: 110px; 
+  width: 500px; 
+  margin: 0 auto; 
+  padding-top: 70px; 
 }
+
+h1 {
+  text-align: center; 
+}
+
+input {
+  height: 50px; 
+  width: 500px; 
+  font-size: 18px; 
+  padding-left: 10px; 
+  border: 2px solid rgb(7, 7, 7); 
+}
+
+ul {
+  list-style-type: none;
+  width: 515px; 
+  padding: 0;  
+  margin: 0; 
+  font-size: 22px; 
+}
+
+li {
+  padding: 15px; 
+  border: 1px solid gray; 
+  border-top: none;
+  padding-left: 15px; 
+}
+
+button {
+  margin-right: 20px; 
+}
+
+li span {
+  display: inline-block; 
+  width: 425px; 
+  overflow-wrap: break-word; 
+}
+
+.fa-times {
+  cursor: pointer;
+  color: darkred; 
+}
+
+
+
+
+
 
