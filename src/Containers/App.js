@@ -130,26 +130,26 @@ class App extends Component {
       <div className='App-wrap'>
         <div className='App'>
           <h1> My To-Do List </h1>
-          <input 
-            type = 'text'
-            placeholder = 'What needs to be done?'
-            value = {this.state.userInput}
-            onChange = {this.inputChangeHandler} 
-            onKeyPress = {this.pressEnterHandler} /> 
           <ul> 
-          {this.renderItems()} 
+            <input 
+              type = 'text'
+              placeholder = 'What needs to be done?'
+              value = {this.state.userInput}
+              onChange = {this.inputChangeHandler} 
+              onKeyPress = {this.pressEnterHandler} /> 
+            {this.renderItems()} 
+            <div className='summary'> 
+              {numOfItemsLeft} item(s) left 
+              <div className='status-buttons'>
+                <button onClick={this.clickAllHanderler}> All</button> 
+                <button onClick={this.clickActiveHandler}> Active </button> 
+                <button onClick={this.clickCompletedHandler}> Completed </button>
+              </div>
+              <div className='clear-button'>
+                <button onClick={this.clearCompletedHandler}> Clear Completed </button> 
+              </div>  
+            </div>
           </ul>
-          <div className='summary'> 
-            {numOfItemsLeft} item(s) left 
-            <div className='status-buttons'>
-              <button onClick={this.clickAllHanderler}> All</button> 
-              <button onClick={this.clickActiveHandler}> Active </button> 
-              <button onClick={this.clickCompletedHandler}> Completed </button>
-            </div>
-            <div className='clear-button'>
-              <button onClick={this.clearCompletedHandler}> Clear Completed </button> 
-            </div>
-          </div>
         </div>
         <footer>
           <p> Designed and coded by </p> 

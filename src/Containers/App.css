@@ -14,13 +14,14 @@
 h1 {
   text-align: center; 
   color: rgb(17, 57, 77); 
+  margin-bottom: 30px; 
 }
 
 /*-------------------input-------------------*/ 
 
 input[type=text] {
   height: 50px; 
-  width: 500px; 
+  width: 501px; 
   font-size: 18px; 
   color: #2F4550; 
   padding-left: 10px; 
@@ -39,7 +40,8 @@ ul {
   width: 515px; 
   padding: 0;  
   margin: 0; 
-  font-size: 22px; 
+  font-size: 22px;
+  box-shadow: 1px 1px 4px 4px #586F7C; 
 }
 
 li {
@@ -92,7 +94,8 @@ cursor: pointer;
 
 button {
   font-size: 12px;
-  color: rgb(27, 40, 46); 
+  color: white; 
+  background-color: rgb(17, 57, 77);  
   border: 1px solid #2F4550; 
   border-radius: 5px; 
   margin-left: 2px; 
@@ -130,6 +133,11 @@ footer p {
     padding: 20px 0; 
   }
 
+  h1 {
+    font-size: 28px; 
+    margin-bottom: 20px; 
+  }
+
   input[type=text] {
     width: 400px; 
     height: 40px; 
@@ -140,7 +148,7 @@ footer p {
   }
 
   ul {
-    width: 415px;
+    width: 414px;
     font-size: 20px; 
   }
 
