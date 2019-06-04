@@ -1,3 +1,4 @@
+/*------------------general-------------------*/
 .App-wrap {
   background-color: white; 
 }
@@ -15,6 +16,8 @@ h1 {
   color: rgb(17, 57, 77); 
 }
 
+/*-------------------input-------------------*/ 
+
 input[type=text] {
   height: 50px; 
   width: 500px; 
@@ -30,6 +33,7 @@ input[type=text] {
   font-size: 20px; 
 }
 
+/*-------------------list----------------------*/
 ul {
   list-style-type: none;
   width: 515px; 
@@ -74,6 +78,8 @@ cursor: pointer;
   color: rgb(159, 189, 171); 
 }
 
+/*----------bottom summary and buttons--------------*/
+
 .summary {
   width: 483px; 
   font-size: 14px; 
@@ -103,7 +109,59 @@ button {
   margin-left: 100px; 
 }
 
+/*-------------------footer---------------------*/
 
+footer {
+  position: fixed; 
+  bottom: 10px;
+  right: 10px; 
+  font-family: 'Indie Flower', cursive;
+}
 
+footer p {
+  margin: 10px; 
+  text-align: right; 
+}
 
+/*-------------------@media--------------------*/
+@media(max-width: 650px) {
+  .App {
+    width: 400px; 
+    padding: 20px 0; 
+  }
 
+  input[type=text] {
+    width: 400px; 
+    height: 40px; 
+  }
+
+  ::placeholder {
+    font-size: 18px; 
+  }
+
+  ul {
+    width: 415px;
+    font-size: 20px; 
+  }
+
+  li {
+    padding: 5px; 
+  }
+
+  li span {
+    width: 330px; 
+  }
+
+  .summary {
+    width: 391px; 
+    padding: 11px; 
+  }
+
+  .status-buttons {
+    margin-left: 15px; 
+  }
+
+  .clear-button {
+    margin-left: 17px; 
+  }
+}

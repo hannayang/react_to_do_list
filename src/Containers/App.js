@@ -151,6 +151,10 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <footer>
+          <p> Designed and coded by </p> 
+          <p> Hanna Yang </p>
+        </footer>
       </div>
     );
   }; 
