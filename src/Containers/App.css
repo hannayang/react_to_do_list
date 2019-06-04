@@ -1,20 +1,32 @@
+.App-wrap {
+  background-color: white; 
+}
+
 .App {
   height: 100%; 
   width: 500px; 
   margin: 0 auto; 
-  padding-top: 70px; 
+  padding: 70px 0; 
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
   text-align: center; 
+  color: rgb(17, 57, 77); 
 }
 
-input {
+input[type=text] {
   height: 50px; 
   width: 500px; 
   font-size: 18px; 
+  color: #2F4550; 
   padding-left: 10px; 
-  border: 2px solid rgb(7, 7, 7); 
+  border: 2px solid #586F7C; 
+}
+
+::placeholder {
+  color: lightgray; 
+  font-style: italic; 
 }
 
 ul {
@@ -27,13 +39,16 @@ ul {
 
 li {
   padding: 15px; 
-  border: 1px solid gray; 
+  border: 1px solid #586F7C; 
   border-top: none;
-  padding-left: 15px; 
+  color: #2F4550;
 }
 
-button {
-  margin-right: 20px; 
+input[type=checkbox] {
+  display: inline-block; 
+  margin-right: 15px; 
+  font-size: 30px; 
+  cursor: pointer;
 }
 
 li span {
@@ -42,11 +57,50 @@ li span {
   overflow-wrap: break-word; 
 }
 
+i {
+cursor: pointer;
+}
+
 .fa-times {
-  cursor: pointer;
   color: darkred; 
 }
 
+.line-through {
+  text-decoration: line-through; 
+} 
+
+.gray {
+  color: rgb(159, 189, 171); 
+}
+
+.summary {
+  width: 483px; 
+  font-size: 14px; 
+  color: rgb(61, 60, 60); 
+  padding: 15px; 
+  border: 1px solid gray; 
+  border-top: none;
+  border-bottom: 2px solid #586F7C; 
+}
+
+button {
+  font-size: 12px;
+  color: rgb(27, 40, 46); 
+  border: 1px solid #2F4550; 
+  border-radius: 5px; 
+  margin-left: 2px; 
+  cursor: pointer;
+}
+
+.status-buttons {
+  display: inline-block; 
+  margin-left: 20px; 
+}
+
+.clear-button {
+  display: inline-block; 
+  margin-left: 100px; 
+}
 
 
 
