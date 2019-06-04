@@ -31,8 +31,14 @@ class App extends Component {
     if(this.state.userInput === '') {
       return 
     }
-    // const spaceRegex = / /; 
-
+    if(this.state.userInput === ' ') {
+      return
+    }
+    // it doesn't allow user input with only multiple spaces, e.g. '    '. 
+    const spaceRegex = /^\s\s*\s$/;
+    if(spaceRegex.test(this.state.userInput) === true) {
+      return 
+    } 
     this.setState({
       userInput: '', 
       toDoArray: this.state.toDoArray.concat({

@@ -27,6 +27,7 @@ input[type=text] {
 ::placeholder {
   color: lightgray; 
   font-style: italic; 
+  font-size: 20px; 
 }
 
 ul {
