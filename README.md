@@ -1,6 +1,14 @@
-## How to run
+# Order Burger Online
+This project is to practice React. 
 
-``` 
-npm install
+[![Screenshot](./screenshot.png)](screenshot)
+
+## Library used
+
+- React
+
+## How to run: 
+```
+npm install 
 npm start
 ```
