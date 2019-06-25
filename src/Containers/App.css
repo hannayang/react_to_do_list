@@ -4,7 +4,6 @@
 }
 
 .App {
-  height: 100%; 
   width: 500px; 
   margin: 0 auto; 
   padding: 70px 0; 
@@ -41,7 +40,7 @@ ul {
   padding: 0;  
   margin: 0; 
   font-size: 22px;
-  box-shadow: 1px 1px 4px 4px #586F7C; 
+  box-shadow: 1px 1px 4px 4px #586F7C;  
 }
 
 li {
@@ -90,6 +89,7 @@ cursor: pointer;
   border: 1px solid gray; 
   border-top: none;
   border-bottom: 2px solid #586F7C; 
+  margin-bottom: 100px; 
 }
 
 button {
@@ -150,6 +150,7 @@ footer p {
   ul {
     width: 414px;
     font-size: 20px; 
+    box-shadow: none; 
   }
 
   li {
@@ -161,8 +162,9 @@ footer p {
   }
 
   .summary {
-    width: 391px; 
+    width: 390px; 
     padding: 11px; 
+    margin-bottom: 40px; 
   }
 
   .status-buttons {
@@ -171,6 +173,15 @@ footer p {
 
   .clear-button {
     margin-left: 17px; 
+  }
+
+  footer {
+    bottom: 1px;
+    right: 1px; 
+  }
+
+  footer p {
+    margin: 0 5px; 
   }
 }
 
@@ -184,14 +195,14 @@ footer p {
   }
 
   ul {
-    width: 345px;
+    width: 347px;
   }
 
-  .clear-button {
-    margin-right: 1px; 
+  li span {
+    width: 80%;
   }
 
   .summary {
-    width: 325px; 
+    width: 323px; 
   }
 }
