@@ -25,6 +25,7 @@ input[type=text] {
   color: #2F4550; 
   padding-left: 10px; 
   border: 2px solid #586F7C; 
+  border-radius: 0; 
 }
 
 ::placeholder {
@@ -164,7 +165,7 @@ footer p {
   .summary {
     width: 390px; 
     padding: 11px; 
-    margin-bottom: 40px; 
+    margin-bottom: 50px; 
   }
 
   .status-buttons {
@@ -187,15 +188,15 @@ footer p {
 
 @media(max-width: 550px) {
   .App {
-    width: 345px; 
+    width: 340px; 
   }
 
   input[type=text] {
-    width: 332px; 
+    width: 325px; 
   }
 
   ul {
-    width: 347px;
+    width: 340px;
   }
 
   li span {
@@ -203,6 +204,6 @@ footer p {
   }
 
   .summary {
-    width: 323px; 
+    width: 316px; 
   }
 }
