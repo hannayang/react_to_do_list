@@ -188,15 +188,15 @@ footer p {
 
 @media(max-width: 550px) {
   .App {
-    width: 340px; 
+    width: 330px; 
   }
 
   input[type=text] {
-    width: 325px; 
+    width: 315px; 
   }
 
   ul {
-    width: 340px;
+    width: 330px;
   }
 
   li span {
@@ -204,6 +204,6 @@ footer p {
   }
 
   .summary {
-    width: 316px; 
+    width: 306px; 
   }
 }
