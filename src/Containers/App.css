@@ -157,7 +157,7 @@ footer p {
   }
 
   li span {
-    width: 330px; 
+    width: 85%;
   }
 
   .summary {
@@ -171,5 +171,27 @@ footer p {
 
   .clear-button {
     margin-left: 17px; 
+  }
+}
+
+@media(max-width: 550px) {
+  .App {
+    width: 350px; 
+  }
+
+  input[type=text] {
+    width: 337px; 
+  }
+
+  ul {
+    width: 350px;
+  }
+
+  .clear-button {
+    margin-right: 1px; 
+  }
+
+  .summary {
+    width: 330px; 
   }
 }
