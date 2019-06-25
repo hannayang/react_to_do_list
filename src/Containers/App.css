@@ -176,15 +176,15 @@ footer p {
 
 @media(max-width: 550px) {
   .App {
-    width: 350px; 
+    width: 345px; 
   }
 
   input[type=text] {
-    width: 337px; 
+    width: 332px; 
   }
 
   ul {
-    width: 350px;
+    width: 345px;
   }
 
   .clear-button {
@@ -192,6 +192,6 @@ footer p {
   }
 
   .summary {
-    width: 330px; 
+    width: 325px; 
   }
 }
